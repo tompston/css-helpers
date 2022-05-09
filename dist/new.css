@@ -118,26 +118,7 @@
   <div class="flex-center">
       <div class="max-width-1">content</div>
   </div>
-
--- importing fonts example
-
-  @font-face {
-    font-family: "Poppins-Bold";
-    src: url(../fonts/Poppins-Bold.ttf);
-  }
-
--- Automatic grid example
-
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
--- flex-center class
-
-  .flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
+  
 */
 
 html {

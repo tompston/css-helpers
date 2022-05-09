@@ -28,10 +28,10 @@ wget https://raw.githubusercontent.com/tompston/rufus-css/main/dist/rufus.css
 | transition-x  | transition             | 1-3, binded to `--transition-x`                                    |
 | ls-x          | letter-spacing:        | 1-6, binded to `--ls-x`                                            |
 | lh-x          | line-height            | 1-9, binded to `--lh-x`                                            |
-| danger-1-bg   | background-color       | 1-9, binded to `--danger-1-bg`                                     |
-| danger-1-txt  | color                  | 1-9, binded to `--danger-1-txt`                                    |
-| success-1-bg  | background-color       | 1-9, binded to `--success-1-bg`                                    |
-| success-1-txt | color                  | 1-9, binded to `--success-1-txt`                                   |
+| danger-1-bg   | background-color       | binded to `--danger-1-bg`                                          |
+| danger-1-txt  | color                  | binded to `--danger-1-txt`                                         |
+| success-1-bg  | background-color       | binded to `--success-1-bg`                                         |
+| success-1-txt | color                  | binded to `--success-1-txt`                                        |
 | bordex-x-y    | border                 | border-`[px(1-2)]`-`[col(1-3)]`                                    |
 
 ### Other root variables
@@ -85,4 +85,24 @@ button[disabled] {
     ...
     "postbuild": "purgecss --css dist/assets/*.css --content dist/assets/*.js -o dist/assets/  --safelist html body"
   },
-``` -->
+```
+
+-- importing fonts example
+
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url(../fonts/Poppins-Bold.ttf);
+  }
+
+-- Automatic grid example
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+-- flex-center class
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+-->
