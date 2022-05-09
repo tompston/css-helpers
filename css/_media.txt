@@ -1,0 +1,63 @@
+.max-width-1,
+.max-width-2,
+.max-width-3 {
+  padding: 0px 40px;
+}
+
+/* xl */
+@media screen and (max-width: 1410px) {
+  .hide-on-xl {
+    display: none;
+  }
+}
+
+/* lg */
+@media screen and (max-width: 1024px) {
+  .max-width-1,
+  .max-width-2,
+  .max-width-3 {
+    padding: 0px 20px;
+  }
+
+  .hide-on-lg {
+    display: none;
+  }
+
+  :root {
+    --fs-1: 54px;
+    --fs-2: 39px;
+    --fs-3: 34px;
+    --fs-4: 27px;
+    --fs-5: 22px;
+    --fs-6: 20px;
+    --fs-7: 18px;
+    --fs-8: 15px;
+    --fs-9: 14px;
+  }
+}
+
+/* sm */
+@media screen and (max-width: 720px) {
+  .hide-on-sm {
+    display: none;
+  }
+}
+
+/* xs */
+@media screen and (max-width: 550px) {
+  :root {
+    --fs-1: 34px;
+    --fs-2: 29px;
+    --fs-3: 24px;
+    --fs-4: 22px;
+    --fs-5: 20px;
+    --fs-6: 19px;
+    --fs-7: 18px;
+    --fs-8: 15px;
+    --fs-9: 14px;
+  }
+
+  .hide-on-xs {
+    display: none;
+  }
+}

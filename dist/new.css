@@ -1,0 +1,687 @@
+:root {
+  /* max-width for the main content */
+  --max-width-1: 1325px;
+  --max-width-2: 905px;
+  --max-width-3: 405px;
+
+  /* font-family, used when custom fonts imported */
+  --font-fam-1: sans-serif;
+  --font-fam-2: sans-serif;
+  --font-fam-3: sans-serif;
+  --font-fam-4: sans-serif;
+  --font-fam-5: sans-serif;
+  --font-fam-6: sans-serif;
+
+  /* define the color palette ( mapped to main-col-x and text-col-x ) */
+  --main-col-1: #000000;
+  --main-col-2: #ffffff;
+  --main-col-3: #ffffff;
+  --main-col-4: #ffffff;
+  --main-col-5: #ffffff;
+  --main-col-6: #ffffff;
+  --main-col-7: #ffffff;
+  --main-col-8: #ffffff;
+  --main-col-9: #ffffff;
+
+  /* font-size */
+  --fs-1: 78px;
+  --fs-2: 64px;
+  --fs-3: 44px;
+  --fs-4: 30px;
+  --fs-5: 25px;
+  --fs-6: 20px;
+  --fs-7: 18px;
+  --fs-8: 15px;
+  --fs-9: 14px;
+  --fs-10: 10px;
+
+  /* border-radius */
+  --border-rad-1: 18px;
+  --border-rad-2: 14px;
+  --border-rad-3: 10px;
+  --border-rad-4: 7px;
+  --border-rad-5: 5px;
+  --border-rad-6: 0px;
+
+  /* hr color  */
+  --hr-1: rgba(29, 29, 29, 0.4);
+  --hr-2: rgba(29, 29, 29, 0.2);
+  --hr-3: rgba(29, 29, 29, 0.1);
+
+  /* border */
+  --border-1-1: 1px solid rgba(48, 48, 48, 0.3);
+  --border-1-2: 1px solid rgba(48, 48, 48, 0.15);
+  --border-1-3: 1px solid rgba(48, 48, 48, 0.08);
+  --border-2-1: 2px solid rgba(48, 48, 48, 0.3);
+  --border-2-2: 2px solid rgba(48, 48, 48, 0.15);
+  --border-2-3: 2px solid rgba(48, 48, 48, 0.08);
+
+  /* transitions */
+  --transition-1: all 0.12s ease-in;
+  --transition-2: all 0.08s ease-in;
+  --transition-3: all 0.08s ease-in;
+
+  /* box-shadow */
+  --shadow-1: rgba(0, 0, 0, 0.3) 0px 3px 7px;
+  --shadow-2: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+  --shadow-3: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --shadow-4: rgba(0, 0, 0, 0.2) 2px 7px 15px -3px;
+  --shadow-5: rgba(149, 157, 165, 0.3) 0px 2px 10px;
+  --shadow-6: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+
+  /* line-height */
+  --lh-1: 1.02;
+  --lh-2: 1.02;
+  --lh-3: 1.04;
+  --lh-4: 1.04;
+  --lh-5: 1.04;
+  --lh-6: 1.62;
+  --lh-7: 1.64;
+  --lh-8: 1.67;
+  --lh-9: 1.68;
+
+  /* letter-spacing */
+  --ls-1: 0.1em;
+  --ls-2: 0.05em;
+  --ls-3: 0.02em;
+  --ls-4: 0.01em;
+  --ls-5: -0.02em;
+  --ls-6: -0.05em;
+
+  /* colors associated with states */
+  --danger-1-bg: rgb(225, 86, 86);
+  --danger-1-txt: red;
+  --success-1-bg: rgb(111, 225, 86);
+  --success-1-txt: rgb(41, 147, 62);
+
+  /* global properties attached to body */
+  --global-bg-col: white;
+  --global-txt-col: rgb(46, 46, 46);
+  --global-font: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
+  /* cursor selection colors */
+  --selection-bg-col: rgba(126, 167, 243, 0.65);
+  --selection-txt-col: rgb(255, 255, 255);
+
+  /* code element properties */
+  --code-bg: rgb(243, 243, 243);
+  --code-txt: rgb(48, 48, 48);
+  --code-padding: 3px 7px;
+  --code-fs: 13px;
+}
+
+/* 
+
+-- Centering content + full width backgrounds in html
+    
+  <div class="flex-center">
+      <div class="max-width-1">content</div>
+  </div>
+
+-- importing fonts example
+
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url(../fonts/Poppins-Bold.ttf);
+  }
+
+-- Automatic grid example
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+-- flex-center class
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+*/
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* make the scrollbar not take up the total space of the page, so that there is no shift once it appears / dissapears */
+  overflow-y: scroll;
+  cursor: default;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  touch-action: manipulation;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--global-font);
+  background: var(--global-bg-col);
+  color: var(--global-txt-col);
+}
+::selection {
+  color: var(--selection-txt-col);
+  background-color: var(--selection-bg-col);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8,
+h9 {
+  font-weight: unset;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding-left: 33px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+
+button {
+  outline: inherit;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  border: none;
+  padding: 0;
+}
+
+code,
+.code {
+  font-family: Roboto Mono, Menlo, monospace;
+  background: var(--code-bg);
+  color: var(--code-txt);
+  font-size: var(--code-fs);
+  padding: var(--code-padding);
+  border-radius: 6px;
+}
+.code {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input,
+textarea {
+  font-family: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+textarea {
+  resize: vertical;
+}
+input:focus,
+textarea:focus {
+  outline: none; /* removes the border on focus for inputs */
+}
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+  font-size: 15px;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+}
+/* disable text select utility class + applied to buttons, images and inputs */
+.disable-text-select,
+button,
+img,
+input::placeholder,
+textarea::placeholder {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+/*  */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* fw-x */
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+
+/* other helper classes */
+.hidden {
+  display: none;
+}
+.round {
+  border-radius: 999px;
+}
+.pointer {
+  cursor: pointer;
+}
+.align-text-vertically {
+  display: flex;
+  align-items: center;
+}
+.remove-decorations {
+  text-decoration: none;
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+}
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+/* rows */
+.gtr-1-1-1-1 {
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.gtr-1-1-1 {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.gtr-1-1 {
+  grid-template-rows: 1fr 1fr;
+}
+.gtr-1 {
+  grid-template-rows: 1fr;
+}
+.gtr-1-auto {
+  grid-template-rows: 1fr auto;
+}
+.gtr-auto-1 {
+  grid-template-rows: auto 1fr;
+}
+.gtr-auto-auto-auto {
+  grid-template-rows: auto auto auto;
+}
+.gtr-auto-auto {
+  grid-template-rows: auto auto;
+}
+.gtr-auto {
+  grid-template-rows: auto;
+}
+.gtc-1-1-1-1 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gtc-1-1-1 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.gtc-1-1 {
+  grid-template-columns: 1fr 1fr;
+}
+.gtc-1 {
+  grid-template-columns: 1fr;
+}
+.gtc-1-auto {
+  grid-template-columns: 1fr auto;
+}
+.gtc-auto-1 {
+  grid-template-columns: auto 1fr;
+}
+.gtc-auto-auto-auto {
+  grid-template-columns: auto auto auto;
+}
+.gtc-auto-auto {
+  grid-template-columns: auto auto;
+}
+.gtc-auto {
+  grid-template-columns: auto;
+}
+/* max-width */
+.max-width-1 {
+  width: var(--max-width-1);
+}
+.max-width-2 {
+  width: var(--max-width-2);
+}
+.max-width-3 {
+  width: var(--max-width-3);
+}
+
+/* background-color */
+.main-col-1 {
+  background-color: var(--main-col-1);
+}
+.main-col-2 {
+  background-color: var(--main-col-2);
+}
+.main-col-3 {
+  background-color: var(--main-col-3);
+}
+.main-col-4 {
+  background-color: var(--main-col-4);
+}
+.main-col-5 {
+  background-color: var(--main-col-5);
+}
+.main-col-6 {
+  background-color: var(--main-col-6);
+}
+.main-col-7 {
+  background-color: var(--main-col-7);
+}
+.main-col-8 {
+  background-color: var(--main-col-8);
+}
+.main-col-9 {
+  background-color: var(--main-col-9);
+}
+
+/* bord-rad */
+.border-rad-1 {
+  border-radius: var(--border-rad-1);
+}
+.border-rad-2 {
+  border-radius: var(--border-rad-2);
+}
+.border-rad-3 {
+  border-radius: var(--border-rad-3);
+}
+.border-rad-4 {
+  border-radius: var(--border-rad-4);
+}
+.border-rad-5 {
+  border-radius: var(--border-rad-5);
+}
+.border-rad-6 {
+  border-radius: var(--border-rad-6);
+}
+/* font-family */
+.font-fam-1 {
+  font-family: var(--font-fam-1);
+}
+.font-fam-2 {
+  font-family: var(--font-fam-2);
+}
+.font-fam-3 {
+  font-family: var(--font-fam-3);
+}
+.font-fam-4 {
+  font-family: var(--font-fam-4);
+}
+.font-fam-5 {
+  font-family: var(--font-fam-5);
+}
+.font-fam-6 {
+  font-family: var(--font-fam-6);
+}
+
+/* text-color mapped to main-col-x */
+.text-col-1 {
+  color: var(--main-col-1);
+}
+.text-col-2 {
+  color: var(--main-col-2);
+}
+.text-col-3 {
+  color: var(--main-col-3);
+}
+.text-col-4 {
+  color: var(--main-col-4);
+}
+.text-col-5 {
+  color: var(--main-col-5);
+}
+.text-col-6 {
+  color: var(--main-col-6);
+}
+.text-col-7 {
+  color: var(--main-col-7);
+}
+.text-col-8 {
+  color: var(--main-col-8);
+}
+.text-col-9 {
+  color: var(--main-col-9);
+}
+
+/* font-size */
+.fs-1,
+h1 {
+  font-size: var(--fs-1) !important;
+}
+.fs-2,
+h2 {
+  font-size: var(--fs-2) !important;
+}
+.fs-3,
+h3 {
+  font-size: var(--fs-3) !important;
+}
+.fs-4,
+h4 {
+  font-size: var(--fs-4) !important;
+}
+.fs-5,
+h5 {
+  font-size: var(--fs-5) !important;
+}
+.fs-6,
+h6 {
+  font-size: var(--fs-6) !important;
+}
+.fs-7 {
+  font-size: var(--fs-7) !important;
+}
+.fs-8 {
+  font-size: var(--fs-8) !important;
+}
+.fs-9 {
+  font-size: var(--fs-9) !important;
+}
+.fs-10 {
+  font-size: var(--fs-10) !important;
+}
+/* shadow-x */
+.shadow-1 {
+  box-shadow: var(--shadow-1);
+}
+.shadow-2 {
+  box-shadow: var(--shadow-2);
+}
+.shadow-3 {
+  box-shadow: var(--shadow-3);
+}
+.shadow-4 {
+  box-shadow: var(--shadow-4);
+}
+.shadow-5 {
+  box-shadow: var(--shadow-5);
+}
+.shadow-6 {
+  box-shadow: var(--shadow-6);
+}
+
+/* text */
+.text-1 {
+  font-size: var(--fs-6);
+  line-height: var(--lh-6);
+}
+.text-2 {
+  font-size: var(--fs-7);
+  line-height: var(--lh-7);
+}
+.text-3 {
+  font-size: var(--fs-8);
+  line-height: var(--lh-8);
+}
+.text-4 {
+  font-size: var(--fs-9);
+  line-height: var(--lh-9);
+}
+
+/* transition */
+.transition-1 {
+  transition: var(--transition-1);
+}
+.transition-2 {
+  transition: var(--transition-2);
+}
+.transition-3 {
+  transition: var(--transition-3);
+}
+
+/* hr with a height of 1px, and decreasing color intensity */
+.hr-1-1 {
+  border: 0;
+  height: 1px;
+  background: var(--hr-col-1);
+}
+.hr-1-2 {
+  border: 0;
+  height: 1px;
+  background: var(--hr-col-2);
+}
+.hr-1-3 {
+  border: 0;
+  height: 1px;
+  background: var(--hr-col-3);
+}
+/* hr with a height of 2px, and decreasing color intensity */
+.hr-2-1 {
+  border: 0;
+  height: 2px;
+  background: var(--hr-col-1);
+}
+.hr-2-2 {
+  border: 0;
+  height: 2px;
+  background: var(--hr-col-2);
+}
+.hr-2-3 {
+  border: 0;
+  height: 2px;
+  background: var(--hr-col-3);
+}
+
+/* Sizes taken from tw */
+.ls-1 {
+  letter-spacing: var(--ls-1);
+}
+.ls-2 {
+  letter-spacing: var(--ls-2);
+}
+.ls-3 {
+  letter-spacing: var(--ls-3);
+}
+.ls-4 {
+  letter-spacing: var(--ls-4);
+}
+.ls-5 {
+  letter-spacing: var(--ls-5);
+}
+.ls-6 {
+  letter-spacing: var(--ls-6);
+}
+
+/* line-height */
+.lh-1 {
+  line-height: var(--lh-1);
+}
+.lh-2 {
+  line-height: var(--lh-2);
+}
+.lh-3 {
+  line-height: var(--lh-3);
+}
+.lh-4 {
+  line-height: var(--lh-4);
+}
+.lh-5 {
+  line-height: var(--lh-5);
+}
+.lh-6 {
+  line-height: var(--lh-6);
+}
+.lh-7 {
+  line-height: var(--lh-7);
+}
+.lh-8 {
+  line-height: var(--lh-8);
+}
+.lh-9 {
+  line-height: var(--lh-9);
+}
+
+/* border */
+.border-1-1 {
+  border: var(--border-1-1);
+}
+.border-1-2 {
+  border: var(--border-1-2);
+}
+.border-1-3 {
+  border: var(--border-1-3);
+}
+.border-2-1 {
+  border: var(--border-2-1);
+}
+.border-2-2 {
+  border: var(--border-2-2);
+}
+.border-2-3 {
+  border: var(--border-2-3);
+}
+
+/* state colors */
+.danger-1-bg {
+  background-color: var(--danger-1-bg);
+}
+.danger-1-txt {
+  color: var(--danger-1-txt);
+}
+.success-1-bg {
+  background-color: var(--success-1-bg);
+}
+.success-1-txt {
+  color: var(--success-1-txt);
+}
