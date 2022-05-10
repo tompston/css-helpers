@@ -179,12 +179,10 @@ pre {
 }
 
 button {
-  outline: inherit;
   background: none;
   cursor: pointer;
   color: inherit;
   font: inherit;
-  border: none;
   padding: 0;
 }
 
@@ -205,9 +203,6 @@ code,
 }
 input,
 textarea {
-  font-family: inherit;
-  background: none;
-  border: none;
   padding: 0;
   margin: 0;
 }
