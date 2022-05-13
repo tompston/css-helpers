@@ -196,36 +196,35 @@ h6 {
 .hr-1-1 {
   border: 0;
   height: 1px;
-  background: var(--hr-col-1);
+  background: var(--hr-1);
 }
 .hr-1-2 {
   border: 0;
   height: 1px;
-  background: var(--hr-col-2);
+  background: var(--hr-2);
 }
 .hr-1-3 {
   border: 0;
   height: 1px;
-  background: var(--hr-col-3);
+  background: var(--hr-3);
 }
 /* hr with a height of 2px, and decreasing color intensity */
 .hr-2-1 {
   border: 0;
   height: 2px;
-  background: var(--hr-col-1);
+  background: var(--hr-1);
 }
 .hr-2-2 {
   border: 0;
   height: 2px;
-  background: var(--hr-col-2);
+  background: var(--hr-2);
 }
 .hr-2-3 {
   border: 0;
   height: 2px;
-  background: var(--hr-col-3);
+  background: var(--hr-3);
 }
 
-/* Sizes taken from tw */
 .ls-1 {
   letter-spacing: var(--ls-1);
 }

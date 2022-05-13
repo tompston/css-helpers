@@ -59,8 +59,6 @@ wget https://raw.githubusercontent.com/tompston/rufus-css/main/dist/rufus.css
 | remove-decorations | text-decoration: none; |         |
 | hover-pointer      | cursor: pointer;       |         |
 | hover-underline    | hover-underline        |         |
-| gtc-x              | grid-template-columns  |         |
-| gtr-x              | grid-template-rows     |         |
 
 ### Snippets
 
