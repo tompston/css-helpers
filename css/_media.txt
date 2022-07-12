@@ -1,18 +1,25 @@
 .max-width-1,
 .max-width-2,
-.max-width-3 {
+.max-width-3,
+.max-width-3,
+.max-width-4,
+.max-width-5,
+.max-width-6 {
   padding: 0px 30px;
 }
 
 /* xl */
-@media (max-width: 1410px) {
+@media (max-width: 1600px) {
   .hide-on-xl {
     display: none;
+  }
+  .show-on-xl {
+    display: block !important;
   }
 }
 
 /* lg */
-@media (max-width: 1024px) {
+@media (max-width: 1064px) {
   .max-width-1,
   .max-width-2,
   .max-width-3 {
@@ -21,6 +28,9 @@
 
   .hide-on-lg {
     display: none;
+  }
+  .show-on-lg {
+    display: block !important;
   }
 
   :root {
@@ -41,12 +51,18 @@
   .hide-on-md {
     display: none;
   }
+  .show-on-md {
+    display: block !important;
+  }
 }
 
 /* sm */
-@media (max-width: 720px) {
+@media (max-width: 750px) {
   .hide-on-sm {
     display: none;
+  }
+  .show-on-sm {
+    display: block !important;
   }
 }
 
@@ -66,5 +82,8 @@
 
   .hide-on-xs {
     display: none;
+  }
+  .show-on-xs {
+    display: block !important;
   }
 }

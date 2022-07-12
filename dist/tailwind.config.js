@@ -1,11 +1,15 @@
 module.exports = {
-  content: ["./src/**/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./src/**/**/*.{js,jsx,ts,tsx}",
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./lib/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     screens: {
-      xl: { max: "1410px" },
-      lg: { max: "1024px" },
+      xl: { max: "1600px" },
+      lg: { max: "1064px" },
       md: { max: "920px" },
-      sm: { max: "720px" },
+      sm: { max: "750px" },
       xs: { max: "550px" },
     },
     fontSize: {

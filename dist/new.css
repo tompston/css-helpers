@@ -1,8 +1,11 @@
 :root {
   /* max-width for the main content */
   --max-width-1: 1325px;
-  --max-width-2: 905px;
-  --max-width-3: 405px;
+  --max-width-2: 1205px;
+  --max-width-3: 1015px;
+  --max-width-4: 940px;
+  --max-width-5: 780px;
+  --max-width-6: 540px;
 
   /* font-family, used when custom fonts imported */
   --font-fam-1: sans-serif;
@@ -302,6 +305,15 @@ textarea::placeholder {
 }
 .max-width-3 {
   width: var(--max-width-3);
+}
+.max-width-4 {
+  width: var(--max-width-4);
+}
+.max-width-5 {
+  width: var(--max-width-5);
+}
+.max-width-6 {
+  width: var(--max-width-6);
 }
 
 /* background-color */

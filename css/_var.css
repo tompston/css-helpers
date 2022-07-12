@@ -8,6 +8,15 @@
 .max-width-3 {
   width: var(--max-width-3);
 }
+.max-width-4 {
+  width: var(--max-width-4);
+}
+.max-width-5 {
+  width: var(--max-width-5);
+}
+.max-width-6 {
+  width: var(--max-width-6);
+}
 
 /* background-color */
 .main-col-1 {
