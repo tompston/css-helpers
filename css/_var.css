@@ -234,54 +234,6 @@ h6 {
   background: var(--hr-3);
 }
 
-.ls-1 {
-  letter-spacing: var(--ls-1);
-}
-.ls-2 {
-  letter-spacing: var(--ls-2);
-}
-.ls-3 {
-  letter-spacing: var(--ls-3);
-}
-.ls-4 {
-  letter-spacing: var(--ls-4);
-}
-.ls-5 {
-  letter-spacing: var(--ls-5);
-}
-.ls-6 {
-  letter-spacing: var(--ls-6);
-}
-
-/* line-height */
-.lh-1 {
-  line-height: var(--lh-1);
-}
-.lh-2 {
-  line-height: var(--lh-2);
-}
-.lh-3 {
-  line-height: var(--lh-3);
-}
-.lh-4 {
-  line-height: var(--lh-4);
-}
-.lh-5 {
-  line-height: var(--lh-5);
-}
-.lh-6 {
-  line-height: var(--lh-6);
-}
-.lh-7 {
-  line-height: var(--lh-7);
-}
-.lh-8 {
-  line-height: var(--lh-8);
-}
-.lh-9 {
-  line-height: var(--lh-9);
-}
-
 /* border */
 .border-1-1 {
   border: var(--border-1-1);

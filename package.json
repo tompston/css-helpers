@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "concat-base": "cat css/*.css > ./dist/new.css",
+    "concat-base": "cat css/*.css > ./dist/root.css",
     "concat-media": "cat css/*.txt > ./dist/media.css",
     "build": "npm run concat-base && npm run concat-media"
   },

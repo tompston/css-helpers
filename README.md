@@ -17,7 +17,7 @@ wget https://raw.githubusercontent.com/tompston/rufus-css/main/dist/rufus.css
 
 | class         | property               | notes                                                              |
 | ------------- | ---------------------- | ------------------------------------------------------------------ |
-| max-width-x   | width                  | 1-3, binded to `--max-width-x`, used for content wrap              |
+| max-width-x   | width                  | 1-6, binded to `--max-width-x`, used for content wrap              |
 | main-col-x    | background-color:      | 1-9, binded to `--main-col-x`                                      |
 | text-col-x    | color:                 | 1-9, binded to `--main-col-x`                                      |
 | fs-x          | font-size              | 1-9, binded to `--fs-x` and `h` elements                           |
@@ -26,8 +26,6 @@ wget https://raw.githubusercontent.com/tompston/rufus-css/main/dist/rufus.css
 | shadow-x      | box-shadow             | 1-6, binded to `--shadow-6`                                        |
 | text-x        | font-size, line-height | 1-4, binded to `--fs-x` and `--lh-x`                               |
 | transition-x  | transition             | 1-3, binded to `--transition-x`                                    |
-| ls-x          | letter-spacing:        | 1-6, binded to `--ls-x`                                            |
-| lh-x          | line-height            | 1-9, binded to `--lh-x`                                            |
 | danger-1-bg   | background-color       | binded to `--danger-1-bg`                                          |
 | danger-1-txt  | color                  | binded to `--danger-1-txt`                                         |
 | success-1-bg  | background-color       | binded to `--success-1-bg`                                         |
@@ -103,4 +101,9 @@ button[disabled] {
     align-items: center;
     justify-content: center;
   }
+
+
+  --global-font: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
 -->
