@@ -190,17 +190,6 @@ h6 {
   line-height: var(--lh-9);
 }
 
-/* transition */
-.transition-1 {
-  transition: var(--transition-1);
-}
-.transition-2 {
-  transition: var(--transition-2);
-}
-.transition-3 {
-  transition: var(--transition-3);
-}
-
 /* hr with a height of 1px, and decreasing color intensity */
 .hr-1-1 {
   border: 0;
@@ -254,6 +243,82 @@ h6 {
   border: var(--border-2-3);
 }
 
+/* border-side-1px */
+.border-b-1-1 {
+  border-bottom: var(--border-1-1);
+}
+.border-b-1-2 {
+  border-bottom: var(--border-1-2);
+}
+.border-b-1-3 {
+  border-bottom: var(--border-1-3);
+}
+.border-t-1-1 {
+  border-top: var(--border-1-1);
+}
+.border-t-1-2 {
+  border-top: var(--border-1-2);
+}
+.border-t-1-3 {
+  border-top: var(--border-1-3);
+}
+.border-l-1-1 {
+  border-left: var(--border-1-1);
+}
+.border-l-1-2 {
+  border-left: var(--border-1-2);
+}
+.border-l-1-3 {
+  border-left: var(--border-1-3);
+}
+.border-r-1-1 {
+  border-right: var(--border-1-1);
+}
+.border-r-1-2 {
+  border-right: var(--border-1-2);
+}
+.border-r-1-3 {
+  border-right: var(--border-1-3);
+}
+
+/* border-side-2px */
+.border-b-2-1 {
+  border-bottom: var(--border-2-1);
+}
+.border-b-2-2 {
+  border-bottom: var(--border-2-2);
+}
+.border-b-2-3 {
+  border-bottom: var(--border-2-3);
+}
+.border-t-2-1 {
+  border-top: var(--border-2-1);
+}
+.border-t-2-2 {
+  border-top: var(--border-2-2);
+}
+.border-t-2-3 {
+  border-top: var(--border-2-3);
+}
+.border-l-2-1 {
+  border-left: var(--border-2-1);
+}
+.border-l-2-2 {
+  border-left: var(--border-2-2);
+}
+.border-l-2-3 {
+  border-left: var(--border-2-3);
+}
+.border-r-2-1 {
+  border-right: var(--border-2-1);
+}
+.border-r-2-2 {
+  border-right: var(--border-2-2);
+}
+.border-r-2-3 {
+  border-right: var(--border-2-3);
+}
+
 /* state colors */
 .danger-1-bg {
   background-color: var(--danger-1-bg);
@@ -266,4 +331,12 @@ h6 {
 }
 .success-1-txt {
   color: var(--success-1-txt);
+}
+
+/*  */
+.bg-light-select-1 {
+  background-color: var(--bg-light-select-1);
+}
+.bg-light-select-2 {
+  background-color: var(--bg-light-select-2);
 }

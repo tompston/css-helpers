@@ -46,23 +46,18 @@
   --border-rad-5: 5px;
   --border-rad-6: 0px;
 
-  /* hr color  */
+  /* hr color */
   --hr-1: rgba(29, 29, 29, 0.4);
   --hr-2: rgba(29, 29, 29, 0.2);
   --hr-3: rgba(29, 29, 29, 0.1);
 
-  /* border */
-  --border-1-1: 1px solid rgba(48, 48, 48, 0.3);
+  /* borders */
+  --border-1-1: 1px solid rgba(48, 48, 48, 0.32);
   --border-1-2: 1px solid rgba(48, 48, 48, 0.15);
   --border-1-3: 1px solid rgba(48, 48, 48, 0.08);
-  --border-2-1: 2px solid rgba(48, 48, 48, 0.3);
+  --border-2-1: 2px solid rgba(48, 48, 48, 0.32);
   --border-2-2: 2px solid rgba(48, 48, 48, 0.15);
   --border-2-3: 2px solid rgba(48, 48, 48, 0.08);
-
-  /* transitions */
-  --transition-1: all 0.12s ease-in;
-  --transition-2: all 0.08s ease-in;
-  --transition-3: all 0.08s ease-in;
 
   /* box-shadow */
   --shadow-1: rgba(0, 0, 0, 0.3) 0px 3px 7px;
@@ -89,6 +84,10 @@
   --selection-bg-col: rgba(126, 167, 243, 0.65);
   --selection-txt-col: rgb(255, 255, 255);
 
+  /*  */
+  --bg-light-select-1: rgb(251, 251, 251);
+  --bg-light-select-2: rgb(238, 238, 238);
+
   /* code element properties */
   --code-bg: rgb(243, 243, 243);
   --code-txt: rgb(48, 48, 48);
@@ -101,15 +100,20 @@
   --global-bg-col: rgb(23, 25, 26);
   --global-txt-col: rgb(232, 230, 227);
   /*  */
-  --border-1-1: 1px solid rgb(115, 115, 115);
-  --border-1-2: 1px solid rgb(62, 62, 62);
-  --border-1-3: 1px solid rgba(255, 255, 255, 0.162);
+  --border-1-1: 1px solid rgba(227, 227, 227, 0.32);
+  --border-1-2: 1px solid rgba(227, 227, 227, 0.15);
+  --border-1-3: 1px solid rgba(227, 227, 227, 0.08);
+  --border-2-1: 2px solid rgba(227, 227, 227, 0.32);
+  --border-2-2: 2px solid rgba(227, 227, 227, 0.15);
+  --border-2-3: 2px solid rgba(227, 227, 227, 0.08);
   /*  */
   --code-bg: #0e0e0e;
   --code-txt: #e9e9e9;
+
   /*  */
-  --bg-light-select-1: rgb(29, 29, 29);
-  --bg-light-select-2: rgb(24, 24, 24);
+  --bg-light-select-1: rgb(21, 21, 21);
+  --bg-light-select-2: rgb(30, 30, 30);
+
   /*  */
   --hr-1: rgba(228, 228, 228, 0.4);
   --hr-2: rgba(226, 226, 226, 0.2);
@@ -130,7 +134,8 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   -webkit-text-size-adjust: 100%;
-  /* make the scrollbar not take up the total space of the page, so that there is no shift once it appears / dissapears */
+  /* make the scrollbar not take up the total space of the page, 
+  so that there is no shift once it appears / dissapears */
   overflow-y: scroll;
   cursor: default;
 }
@@ -157,7 +162,7 @@ ol li {
 
 a {
   font-weight: 600;
-  color: rgb(83, 139, 224) !important;
+  color: rgb(83, 139, 224);
 }
 a:hover {
   text-decoration: underline;
