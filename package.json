@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "concat-base": "cat css/*.css > ./dist/root.css",
-    "concat-media": "cat css/*.txt > ./dist/media.css",
-    "build": "npm run concat-base && npm run concat-media"
+    "base": "cat    css/_base.css css/_var.css > ./dist/root.css",
+    "html": "cat    css/_html.css > ./dist/html.css",
+    "media": "cat   css/*.txt > ./dist/media.css",
+    "custom": "cat  css/_custom.css > ./dist/custom.css",
+    "build": "npm run base && npm run media && npm run html"
   },
   "author": "",
   "license": "MIT",

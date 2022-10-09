@@ -1,8 +1,8 @@
 module.exports = {
   content: [
-    "./src/**/**/*.{js,jsx,ts,tsx}",
-    "./pages/**/*.{js,jsx,ts,tsx}",
-    "./lib/**/*.{js,jsx,ts,tsx}",
+    "./src/**/**/*.{js,jsx,ts,tsx,vue}",
+    "./pages/**/*.{js,jsx,ts,tsx,vue}",
+    "./lib/**/*.{js,jsx,ts,tsx,vue}",
   ],
   theme: {
     screens: {

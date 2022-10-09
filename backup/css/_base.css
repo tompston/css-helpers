@@ -15,6 +15,8 @@
   --font-fam-5: sans-serif;
   --font-fam-6: sans-serif;
 
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
   /* define the color palette ( mapped to main-col-x and text-col-x ) */
   --main-col-1: #000000;
   --main-col-2: #ffffff;
@@ -36,14 +38,14 @@
   --fs-7: 18px;
   --fs-8: 15px;
   --fs-9: 14px;
-  --fs-10: 12px;
+  --fs-10: 11px;
 
   /* border-radius */
-  --border-rad-1: 18px;
-  --border-rad-2: 14px;
-  --border-rad-3: 10px;
-  --border-rad-4: 7px;
-  --border-rad-5: 5px;
+  --border-rad-1: 12px;
+  --border-rad-2: 10px;
+  --border-rad-3: 7px;
+  --border-rad-4: 5px;
+  --border-rad-5: 3px;
   --border-rad-6: 0px;
 
   /* hr color */
@@ -92,8 +94,15 @@
   --code-bg: rgb(243, 243, 243);
   --code-txt: rgb(48, 48, 48);
   --code-padding: 3px 7px;
+  --code-border-rad: 6px;
   --code-fs: 13px;
+
+  /* input placeholder properties */
+  --placeholder-fs: 12px;
+  --placeholder-txt: #9299a4;
 }
+
+
 
 [data-theme="dark"],
 [data-theme="dark"] :root {
@@ -128,41 +137,3 @@
   </div>
   
 */
-
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-  -webkit-text-size-adjust: 100%;
-  /* make the scrollbar not take up the total space of the page, 
-  so that there is no shift once it appears / dissapears */
-  overflow-y: scroll;
-  cursor: default;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  min-height: 100%;
-  width: 100%;
-  touch-action: manipulation;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: var(--global-font);
-  background: var(--global-bg-col);
-  color: var(--global-txt-col);
-}
-
-ol li {
-  margin-left: 20px;
-  list-style: decimal;
-}
-
-a {
-  font-weight: 600;
-  color: rgb(83, 139, 224);
-}
-a:hover {
-  text-decoration: underline;
-}

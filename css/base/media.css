@@ -69,11 +69,11 @@
 /* xs */
 @media (max-width: 550px) {
   :root {
-    --fs-1: 34px;
+    --fs-1: 35px;
     --fs-2: 29px;
-    --fs-3: 24px;
-    --fs-4: 22px;
-    --fs-5: 20px;
+    --fs-3: 26px;
+    --fs-4: 23px;
+    --fs-5: 21px;
     --fs-6: 19px;
     --fs-7: 18px;
     --fs-8: 15px;
