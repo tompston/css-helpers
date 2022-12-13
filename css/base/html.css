@@ -133,11 +133,30 @@ ol li {
   list-style: decimal;
 }
 
+/* Link tag colors */
 a {
-  font-weight: 600;
-  color: rgb(83, 139, 224);
+  font-weight: var(--link-fw);
+  color: var(--link-txt);
 }
 
 a:hover {
+  color: var(--link-txt-hover);
   text-decoration: underline;
 }
+
+a:active{
+  color: var(--link-txt-active);
+}
+
+a:visited{
+  color: var(--link-txt-visited);
+}
+
+/*
+
+  --link-txt-hover: blue;
+  --link-txt-active: blue;
+  --link-txt-visited: blue;
+
+
+*/
