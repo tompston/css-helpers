@@ -1,18 +1,5 @@
 # Additional root variables and utility classes on top of tailwind.
 
-<!-- ## Download
-
-```bash
-# with cmd
-curl https://raw.githubusercontent.com/tompston/rufus-css/main/dist/rufus-content.css -O rufus.css
-curl https://raw.githubusercontent.com/tompston/rufus-css/main/dist/rufus.css -O rufus-content.css
-
-# with bash
-wget https://raw.githubusercontent.com/tompston/rufus-css/main/dist/rufus-content.css
-wget https://raw.githubusercontent.com/tompston/rufus-css/main/dist/rufus.css
-
-``` -->
-
 ### Classes based on root variables
 
 | class             | property               | notes                                                                      |

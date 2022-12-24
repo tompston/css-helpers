@@ -4,11 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "base": "cat    css/_base.css css/_var.css > ./dist/root.css",
-    "html": "cat    css/_html.css > ./dist/html.css",
-    "media": "cat   css/*.txt > ./dist/media.css",
-    "custom": "cat  css/_custom.css > ./dist/custom.css",
-    "build": "npm run base && npm run media && npm run html"
   },
   "author": "",
   "license": "MIT",

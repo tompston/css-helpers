@@ -151,12 +151,3 @@ a:active{
 a:visited{
   color: var(--link-txt-visited);
 }
-
-/*
-
-  --link-txt-hover: blue;
-  --link-txt-active: blue;
-  --link-txt-visited: blue;
-
-
-*/
