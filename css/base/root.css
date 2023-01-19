@@ -1,10 +1,13 @@
 :root {
-  /* max-width for the main content */
-  --max-width-1: 1325px;
+  /* 
+  max-width for the main content. References for 
+  the values are in media.css and tailwind config file
+  */
+  --max-width-1: 1450px;
   --max-width-2: 1205px;
-  --max-width-3: 1015px;
-  --max-width-4: 940px;
-  --max-width-5: 780px;
+  --max-width-3: 920px;
+  --max-width-4: 750px;
+  --max-width-5: 550px;
   --max-width-6: 540px;
 
   /* font-family, used when custom fonts imported */

@@ -9,7 +9,7 @@
 }
 
 /* xl */
-@media (max-width: 1600px) {
+@media (max-width: 1450px) {
   .hide-on-xl {
     display: none;
   }
@@ -19,7 +19,7 @@
 }
 
 /* lg */
-@media (max-width: 1064px) {
+@media (max-width: 1205px) {
   .max-width-1,
   .max-width-2,
   .max-width-3 {
